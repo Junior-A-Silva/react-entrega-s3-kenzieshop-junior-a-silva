@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const ProductsList = () => {
   const products = useSelector((state) => state.products);
   return (
-    <div>
+    <div className="productContainer">
       {products.map((product) => (
         <ProductCard product={product} />
       ))}

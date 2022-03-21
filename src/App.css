@@ -2,22 +2,15 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 body {
   background-color: beige;
 }
 .App-header {
-  background-color: #282c34;
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
   min-height: 10vh;
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +19,110 @@ body {
   color: white;
 }
 
+#headerContent {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+.kenzieShopEBotao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  color: blue;
+}
+
 img {
   width: 300px;
+}
+button {
+  cursor: pointer;
+}
+#cartProductCard {
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 300px;
+  height: 450px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 14pt;
+}
+#btnMostrarCarrinho {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  height: 30px;
+}
+
+#btnMostrarCarrinho:hover {
+  background-color: blue;
+}
+
+#btnMostrarProdutosLoja {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  height: 30px;
+}
+
+#btnMostrarProdutosLoja:hover {
+  background-color: blue;
+}
+
+#productCard {
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 300px;
+  height: 450px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.productName {
+  font-weight: bold;
+  font-size: 16pt;
+}
+#precoEAdicionar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnAddToCart {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.btnAddToCart:hover {
+  background-color: blue;
+}
+
+.productContainer {
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#total {
+  display: flex;
+  font-weight: bold;
+  align-items: flex-end;
+  color: black;
 }
